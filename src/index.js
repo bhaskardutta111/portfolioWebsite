@@ -1,21 +1,23 @@
 import _ from 'Lodash';
 import './styles.css';
-import Display from './display.JPG';
+// import DisplayPic from './sm-displayPic.jpg';
 
-function component(){
-  const elem = document.createElement('div');
+// function component(){
+//     // const elem = document.createElement('div');
+//     const imgContainer = document.querySelector('.image-container');
 
-  //Lodash now imported by this script
-  elem.innerHTML = "WHOLE BODY bundled from webpack";
-  elem.classList.add('addedClass');
+//    //Lodash now imported by this script
+// //   elem.innerHTML = "WHOLE BODY bundled from webpack";
+// //   elem.classList.add('addedClass');
 
-  //adding image to existing div
-  const display = new Image();
-  display.src = Display;
+//    //adding image to existing div
+//     const imgVar = new DisplayPic();
+//     imgVar.src = DisplayPic;
 
-  elem.appendChild(display);
+//     imgContainer.appendChild(imgVar);
 
-return elem;
+//     return imgContainer;
+// }
 
-}
-document.body.appendChild(component());
+// component();
+

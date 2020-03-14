@@ -16,9 +16,21 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
-                use: [
+                test: /\.(jpe?g|png)$/i,
+                use:[
                     'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true, //webpack@1.x
+                            disable: true, //webpack@2.x and new
+                            //optimizing jpg images
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            },
+                        },
+                    },
                 ],
             },
         ],
